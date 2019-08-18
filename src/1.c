@@ -1,3 +1,3 @@
 int main() {
-	if (puts("Hello, World!")) {}
+	if (printf("Hello, World!")) {}
 }
