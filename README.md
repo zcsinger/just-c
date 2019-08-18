@@ -8,11 +8,11 @@ Below are a collection of challenges, each of which has its solution in [number]
 
 ## Challenge 1
 
-Write a program that outputs "hello" without using any includes or semicolons.
+Write a program that prints "Hello, World!" to standard output without using any or semicolon or hashtag keystrokes.
 
 ## Challenge 2
 
-Write a program that prints the numbers from 1 to n without using any semicolons, with an integer command line argument.
+Write a program that inputs an integer from the command line and prints the numbers from 1 to n to standard output without using any semicolon or hashtag keystrokes, with an integer command line argument.
 
 ## Challenge 3
 
