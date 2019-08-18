@@ -1,10 +1,12 @@
 # Just C
 
-This directory will not use any libraries in C. It is interested in writing simple, interesting programs without any assistance.
+This silly project is interested in writing simple, interesting programs in C with a number of unnecessary restrictions.
 
-In particular, each of the C programs in this project do not have a single ";" or "#" keystroke!
+In particular, each of the C programs in this project do not have a single ";" or "#" keystroke! This means no libraries through include statements, macros, or return statements! 
 
-Below are a collection of challenges, each of which has its solution in [number].c.
+Despite this, it still is possible to write meaningful programs! 
+
+Below are a collection of challenges, each of which has its solution in [number].c. I challenge you to try them yourself! There is a hints section on the bottom.
 
 ## Challenge 1
 
@@ -28,7 +30,18 @@ Write a program that sorts a string provided through the command line, and outpu
 
 ## Notes / Hints
 
-The main insight is that one can still put statements in if and while statements, without using a semicolon.
+### Implications
+
+At first glance, it seems like nothing is possible.
+
+- You cannot return a value through "return ... ;"
+- You cannot perform a for loop with "for(... ; ... ; ...) { ... }"
+- You cannot define variables or allocate memory.
+- You cannot explicitly alter variables with "x = ... ;"
+
+### First Step
+
+The main insight is that one can still put statements in if, while, and switch statements, without using a semicolon. This is done with an empty body, and filling in the normal statement in the boolean check.
 
 ### Functions
 
@@ -37,8 +50,10 @@ Helper functions are, as always, useful. However, since there is no way to retur
 Similar to how the main() function will implicitly return an int, helper functions can do the same. Although the behavior is undefined, the output is never used. This will allow for a function to be called in an if statement. 
 For example, if a function
 
-```f() {
+```
+int f() {
 ...
+// No return statement.
 }
 ```
 is defined, then the function can be used elsewhere as:
