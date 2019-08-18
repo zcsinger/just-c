@@ -34,10 +34,10 @@ Write a program that sorts a string provided through the command line, and outpu
 
 At first glance, it seems like nothing is possible.
 
-- You cannot return a value through "return ... ;"
-- You cannot perform a for loop with "for(... ; ... ; ...) { ... }"
+- You cannot return a value through `return ... ;`
+- You cannot perform a for loop with `for(... ; ... ; ...) { ... }`
 - You cannot define variables or allocate memory.
-- You cannot explicitly alter variables with "x = ... ;"
+- You cannot explicitly alter variables with `x = ... ;`
 
 ### First Step
 
